@@ -17,6 +17,10 @@ public class Players
         return players.peekFirst();
     }
 
+    public Player lastPlayer() {
+        return players.peekLast();
+    }
+
     public void rotate(){
         Player firstPlayer = players.poll();
         players.addLast(firstPlayer);
